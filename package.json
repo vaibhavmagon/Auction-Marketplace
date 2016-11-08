@@ -1,0 +1,25 @@
+{
+  "name": "crossoverAssignment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node_modules/.bin/mocha -w"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "mysql" : "~2.10.2",
+    "forever" : "~0.15.1",
+    "cors" : "~2.7.1",
+    "cluster" : "~0.7.7",
+    "bower" : "~1.7.7",
+    "chai" : "~3.5.0",
+    "mocha" : "~2.4.5"
+  }
+}

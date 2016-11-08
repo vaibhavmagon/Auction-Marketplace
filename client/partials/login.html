@@ -1,0 +1,36 @@
+<div id="wrapper" ng-controller="LoginCtrl">
+    <img align="middle" class="loaderImage" src="/client/assets/images/loading.gif"/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center">
+                <h1 class="mainAppName">Auction App</h1>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="background-color: white;padding: 30px;">
+                <div class="paper-input__wrapper">
+                    <input autocomplete="off" class="paper-input paper-input--floating" type="text" id="username" name="username" ng-model="credentials.userName"/>
+                    <label>Choose a Name</label>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button ng-click="login()" style="width:100%" class="btn btn-primary auctionButton pull-right">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="loginErrorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="vertical-alignment-helper">
+                <div class="modal-dialog vertical-align-center">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h5 style="text-align:center;">{{ message }}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

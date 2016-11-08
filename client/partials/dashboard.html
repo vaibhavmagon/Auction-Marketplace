@@ -1,0 +1,69 @@
+<div id="wrapper" class="col-md-12" ng-controller="DashBoardCtrl" ng-cloak>
+    <div class="col-md-3 pin">
+        <div user-widget user-details="presentUser"></div>
+    </div>
+    <div class="col-md-4 pin">
+        <div inventory-widget user-details="presentUser" present-aution-details="presentAutionDetails"></div>
+    </div>
+    <div class="col-md-3 pin">
+        <div auction-widget user-details="presentUser" present-aution-details="presentAutionDetails" active-auction="activeAuction" time-remaining="timeRemaining" key-turn="keyTurn" Timer="Timer" message="message"></div>
+    </div>
+    <div class="modal fade" id="startAuctionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-title"> Start Auction </div>
+                <div class="modal-body row">
+                    <div class="col-md-12">
+                        <div class="row rowrModal">
+                            <div class="col-md-3">
+                                <label>Seller Name :</label>
+                            </div>
+                            <div class="col-md-9">
+                                <b>{{ presentAutionDetails.userName }}</b>
+                            </div>
+                        </div>
+                        <div class="row rowrModal">
+                            <div class="col-md-3">
+                                <label>Auction Item :</label>
+                            </div>
+                            <div class="col-md-9">
+                                <b>{{ presentAutionDetails.itemName }}</b>
+                            </div>
+                        </div>
+                        <div class="row rowrModal">
+                            <div class="col-md-3">
+                                <label>Item Quantity :</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input autocomplete="off" class="paper-input paper-input--floating" type="number" max="{{presentAutionDetails.itemQuantity}}" ng-model="presentAutionDetails.itemQuantity"/>
+                            </div>
+                        </div>
+                        <div class="row rowrModal">
+                            <div class="col-md-3">
+                                <label>Minimum Bid :</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input autocomplete="off" class="paper-input paper-input--floating" type="number" ng-model="presentAutionDetails.minBid"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary auctionButton" ng-click="startAuction()">Start Auction</button>
+                    <button class="btn btn-alert" ng-click="closePop()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginErrorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 style="text-align:center;">{{ message }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

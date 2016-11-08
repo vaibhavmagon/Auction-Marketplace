@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-lightbox",
+  "version": "0.7.0",
+  "main": [
+    "docs/assets/js/bootstrap-lightbox.js",
+    "docs/assets/css/bootstrap-lightbox.css"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.1",
+    "bootstrap": ">=3"
+  },
+  "homepage": "https://github.com/jbutz/bootstrap-lightbox",
+  "_release": "0.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.0",
+    "commit": "8660943c064cb15ced7903156901bc09d6ad73cd"
+  },
+  "_source": "git://github.com/jbutz/bootstrap-lightbox.git",
+  "_target": "~0.7.0",
+  "_originalSource": "bootstrap-lightbox"
+}

@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:#e6e6e6;
+}
+.mainLogo{
+    height:300px;
+    width:600px;
+}
+#wrapper{
+    height:calc(100% - 50px);
+    width:100%;
+    position: absolute;
+    top:50px;
+    left:0px;
+    display:inline-block;
+    padding-left:0px;
+    padding-right:0px;
+    overflow-x: hidden;
+}
+.no-padding{
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+/* NAVBAR CUSTOMIZATIONS */
+nav.navbar-fixed-top{
+    background:#00BCD2;
+    color: #ffffff;
+}
+.navbar-nav{
+    font-family: 'Kameron', serif;
+}
+.navbar-nav li a{
+    color:#ffffff !important;
+}
+.navbar-brand{
+    padding-top:7px;
+    padding-bottom:7px;
+}
+.navbar-brand img{
+    height:100%;
+}
+
+.navbar-nav > li > a.profile-image{
+    border-radius: 17.5px;
+    display: block;
+    height: 35px;
+    margin-bottom: 6.5px;
+    margin-top: 6.5px;
+    width: 35px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
+    background:#00BCD2;
+}
+.dropdown-menu{
+    background:#00BCD2;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
+    color: #262626 !important;
+}
+
+/* panel configs */
+#first-panel-wrapper{
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: 0;
+    overflow-y: auto;
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    top: 50px;
+    z-index: 101;
+    border-right: 2px solid #328c97;
+    overflow-x: hidden;
+}
+#second-panel-wrapper{
+    background:none;
+    height:100%;
+    /*border-left: 2px solid #328c97;
+    border-right: 2px solid #328c97;*/
+}
+#third-panel-wrapper{
+    background:#b3b3b3;
+    height:100%;
+}
+
+/* First Panel */
+#first-panel{
+    padding-top:10px;
+}
+.list-content-wrapper{
+    line-height:50px;
+    height:50px;
+    vertical-align:middle;
+    margin-right: 10px;
+}
+.list-content-wrapper:last-child{
+    margin-right:0px;
+}
+.list-profile-image{
+    width:50px;
+    height:50px;
+    background:#e6e6e6;
+    border-radius:25px;
+    display:block;
+}
+a.list-group-item {
+    float: left;
+    width: 100%;
+}
+#first-panel .list-group-item-heading {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;
+}
+#first-panel .list-group-item-text {
+    display: block;
+    font-size: 12px;
+    color:#328c97;
+}
+.badge{
+    background:#328c97;
+    margin-right:5px;
+}
+.elapsed-time{
+    position:absolute;
+    top:5px;
+    right:5px;
+    font-size:10px;
+    color:#cccccc;
+}
+.search-box {
+    margin-bottom: 0;
+    margin-top: -10px;
+}
+
+/***************************************/
+
+body {
+    background-color: hsl(0, 0%, 90%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.thumbnail { height: 100% !important; min-height:150px;}
+.btn-droppable { width: 180px; height: 40px; padding-left: 4px; }
+.btn-draggable { width: 160px; }
+
+#messages{
+    max-height: 200px;
+    background: white;
+    overflow-y: auto;
+    border: 1px solid lightgrey;
+    margin-bottom: 0px;
+}
+
+tr:hover{
+    color:black;
+    cursor: pointer;
+    background: #eeeeee;
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    font-size: 24px;
+    margin-left: 15px;
+}
+.modal-content{
+    padding: 30px;
+}
+.rowr{
+    background: #f6f8f8;
+    padding-bottom:10px;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    padding-left: 20px;
+    border-color: #edf1f2;
+}
+.rowrModal{
+    padding-bottom:10px;
+}
+.rowtable{
+    padding:10px 20px;
+}
+.starRatingDiv{
+    margin-right: 20px;
+    padding-bottom: 1px;
+    font-size: 25px;
+    color: #CC333C;
+    float: right;
+    margin-top: 3px;
+}
+.fade.in{
+    background:black
+}
+#answerToQuestion{
+    width: 100%;
+    height: 150px;
+}
+#answerToQuestionSolution{
+    width: 100%;
+    height: 150px;
+}
+.profile-image {
+    border-radius: 40px;
+    display: block;
+    height: 72px;
+    margin-bottom: 6.5px;
+    margin-top: 6.5px;
+    width: 75px;
+}
+
+@media all and (max-width: 800px) {
+    .bigShow {
+        display: none;
+    }
+    .mainLogo{
+        height:150px;
+        width:300px;
+    }
+}
+
+.viewField{
+    text-transform: capitalize;
+}
+.divC{
+    text-align: center;
+    padding-bottom:10px;
+    font-size:12px;
+}
+.divCH{
+    text-align: center;
+    font-weight: 600;
+    font-size:12px;
+}
+.loaderImage{
+    display: none;
+    z-index:999999;
+    position:absolute;
+    left:25%;
+    top: 10%;
+    width: 50%;
+
+}
+.noResultFoundImage{
+    display: none;
+    z-index:999999;
+    position:absolute;
+    left:44%;
+    bottom:50px;
+}
+/* Styles go here */
+
+.bigShow .active, .inactive {font-size:40px;cursor:pointer;float: right;}
+.bigShow .active, .inactive {font-size:40px;cursor:pointer;float: right;}
+.bigShow i.active { color: #5cb85c}
+.bigShow i.inactive {color: #d9534f}
+
+.btn, .btn:hover, .btn:focus{
+    padding: 8px 15px;
+    border-radius: 0px;
+}
+.auctionButton, .auctionButton:hover, .auctionButton:focus{
+    background: #00BCD2;
+    border: 1px solid #00BCD2;
+    border-radius: 0px;
+    padding: 8px 15px;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+    max-width: 500px;
+}
+
+tr .colorHeading{
+    background: #E6E6E6;
+}
+
+.tagLine{
+    color: #2B5D80;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+}
+
+/************** LOGIN CSS ****************/
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.paper-input__wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.6rem;
+}
+
+.paper-input {
+    background: transparent !important;
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #2B5D80;
+    font-size: 1.8rem;
+    padding: 5px;
+    color: #2B5D80;
+    padding-left:0px;
+}
+
+.paper-input:focus,
+.paper-input.has-focus {
+    outline: none;
+    border-bottom: 1px solid #00BCD2;
+}
+
+.paper-input ~ label {
+    font-size: 1.3rem;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 1rem;
+    bottom: 0;
+    color: #2B5D80;
+}
+
+.paper-input:focus ~label,
+.paper-input.has-focus ~label {
+    color: #00BCD2;
+}
+
+.paper-input--touched ~ label {
+    visibility: hidden;
+}
+
+.paper-input--floating ~ label {
+    transition: 0.2s ease all;
+}
+
+.paper-input--floating:focus ~ label,
+.paper-input--floating.paper-input--touched ~ label {
+    visibility: visible;
+    top: -0.625rem;
+    font-size: 1rem;
+    color: #00BCD2;
+}
+
+.pin {
+    display: inline-block;
+    background: #fff;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 11px 10px -6px #ccc;
+    -moz-box-shadow: 0 11px 10px -6px #ccc;
+    box-shadow: 0 11px 10px -6px #ccc;
+    margin: 30px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    background: whitesmoke;
+    min-width:300px;
+}
+.pin h2 {
+    font-size: 20px;
+    padding: 7px 0px 7px 0px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+ul{
+    list-style: none;
+    padding-left:0px;
+    margin-left:0px;
+
+}
+.newGlyp{
+     font-size: 30px;
+}
+.inventories{
+    text-align: center;
+}
+.inventories li{
+    border-bottom: 1px solid grey;
+    padding: 15px 0px 15px 0px;
+}
+.headingDiv{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    color: cadetblue;
+}
+.statsDiv{
+    padding: 15px 15px 0px 25px;
+    font-size: 16px;
+}
+.auctionItemDiv{
+    padding: 15px 15px 15px 25px;
+    font-size: 16px;
+}
+.alignCenter{
+    text-align: center;
+}
+b{
+    text-transform: capitalize;
+}
+.mainAppName{
+    font-size: 100px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: cadetblue;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+}
+.clearButton, .clearButton:focus, .clearButton:hover{
+    background: transparent;
+    color: black;
+    padding: 0;
+    border: 0px;
+}
