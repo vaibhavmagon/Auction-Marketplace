@@ -31,6 +31,11 @@ OR (If shell script does not work)
 4. Open - "http://localhost:3000" in browser to see the Auction App.
 
 
+## High level system design
+
+<img src="https://i.ibb.co/rQTtGCr/download.png" alt="download" border="0">
+
+
 ## Unit Test Cases
 1. After setting up connection with local MySQL you are ready to run the test cases.
 2. To Run use - "npm test" and it will run all test cases.
