@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/static/v1?label=Node&message=8&color=<COLOR>"> <img src="https://img.shields.io/static/v1?label=MySql&message=5.5&color=<COLOR>"> <img src="https://img.shields.io/static/v1?label=Build&message=Passing&color=<COLOR>">
 
-This is ReadMe file for the crossover task - Auction App.
+Auction App is a end-to-end implemented classified platform with option of bidding for products in realtime. This is a feature rich repo and was originally part of Crossover's onboarding program (where it was selected).
  
 
 ## Prerequisites
