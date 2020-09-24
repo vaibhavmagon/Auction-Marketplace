@@ -10,9 +10,16 @@ Auction App is a end-to-end implemented classified platform with option of biddi
 2. MySQL installed and server running
 3. All commands and code will run from Code folder onwards. Make sure one has the right path.
 
-Run - "sh appInstallerScript.sh" to install all dependencies, db scripts, npm modules and run the server.
 
-OR (If shell script does not work)
+## Instructions to Install & Run Auction App.
+1. Run - "npm install" to install or Node dependencies.
+2. Run - "bower install" to install bower dependencies for client side libraries.
+3. If no error is found (as it is not found for me) Run using cmd - "forever start server.js"
+4. Open - "http://localhost:3000" in browser to see the Auction App.
+
+Or <br/>
+
+# Run - "sh appInstallerScript.sh" to install all dependencies, db scripts, npm modules and run the server.
 
 
 ## Data and Tables
@@ -22,13 +29,6 @@ OR (If shell script does not work)
 2.2 Password
 [Host, Database and Port will be 'localhost','auctionDb' and '3306'. Please don't change them for proper function of code]
 3. Run - "node db.js" to initialise database auctionDb and tables. After executing the script will notify.
-
-
-## Instructions to Install & Run Auction App.
-1. Run - "npm install" to install or Node dependencies.
-2. Run - "bower install" to install bower dependencies for client side libraries.
-3. If no error is found (as it is not found for me) Run using cmd - "forever start server.js"
-4. Open - "http://localhost:3000" in browser to see the Auction App.
 
 
 ## High level system design
