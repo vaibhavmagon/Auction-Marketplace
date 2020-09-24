@@ -19,7 +19,7 @@ Auction App is a end-to-end implemented classified platform with option of biddi
 
 Or <br/>
 
-# Run - "sh appInstallerScript.sh" to install all dependencies, db scripts, npm modules and run the server.
+<b> Run - "sh appInstallerScript.sh" to install all dependencies, db scripts, npm modules and run the server. </b>
 
 
 ## Data and Tables
